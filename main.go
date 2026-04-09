@@ -9,9 +9,7 @@ import (
 	"push-swap/operations"
 )
 
-type Stack struct {
-	Elements []int
-}
+
 
 func main() {
 	input := os.Args[1]

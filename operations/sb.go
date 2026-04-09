@@ -1,5 +1,7 @@
 package operations
 
+import "fmt"
+
 func SB(StackB *[]int) {
 	var tempStackB []int
 	if len(*StackB) >= 2 {
@@ -9,6 +11,7 @@ func SB(StackB *[]int) {
 		tempStackB = append(tempStackB, second, first)
 		tempStackB = append(tempStackB, *StackB...)
 		*StackB = tempStackB
+		fmt.Println("SB")
 
 	}
 }

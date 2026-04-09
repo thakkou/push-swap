@@ -1,5 +1,7 @@
 package operations
 
+import "fmt"
+
 func RRB(StackB *[]int) {
 	var tempStackB []int
 	if len(*StackB) >= 2 {
@@ -8,6 +10,7 @@ func RRB(StackB *[]int) {
 		tempStackB = append(tempStackB, Last)
 		tempStackB = append(tempStackB, *StackB...)
 		*StackB = tempStackB
+		fmt.Println("RRB")
 
 	}
 }
